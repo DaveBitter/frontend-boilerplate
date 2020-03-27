@@ -94,16 +94,6 @@ module.exports = {
     }
   },
 
-  githooks: {
-    src: {
-      all: './tasks/githooks/*'
-    },
-    dist: {
-      base: './.git/hooks',
-      all: './.git/hooks/*'
-    }
-  },
-
   html: {
     src: {
       templates: `${base.src}/templates/**/*.njk`,

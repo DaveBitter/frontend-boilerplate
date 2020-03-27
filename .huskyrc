@@ -1,0 +1,7 @@
+{
+    "hooks": {
+        "pre-commit": "lint-staged",
+        "post-checkout": "echo "(git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD)" | grep --quiet "package.json" && eval "echo 'run npm install'"",
+        "post-merge": "echo "(git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD)" | grep --quiet "package.json" && eval "echo 'run npm install'""
+    }
+}

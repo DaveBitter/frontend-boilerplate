@@ -14,7 +14,6 @@ import { fonts, fontsWatch } from './tasks/fonts'
 import { js, jsLint, jsTest } from './tasks/js'
 import { mock, mockWatch } from './tasks/mock'
 import { fileUpload } from './tasks/upload'
-import { githooks } from './tasks/githooks'
 import { zip } from './tasks/zip'
 
 function dev(cb) {
@@ -61,7 +60,6 @@ function upload(cb) {
 }
 
 export {
-  githooks,
   codestyle,
   codestyleIsValid,
   dev,

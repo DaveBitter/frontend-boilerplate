@@ -1,0 +1,9 @@
+{
+    "**/*.{md,css,scss,js,json,yml}": [
+        "npm run codestyleIsValid",
+        "npm run codestyle"
+    ],
+    "**/*.{mscss,js}": [
+        "npm run codequality"
+    ]
+}
